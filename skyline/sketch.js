@@ -1,7 +1,17 @@
 function setup() {
   createCanvas(740, 480); //creates a canvas on which to draw
+  background(255, 167, 150); //sets a background color
+  
+  //creates a the dots for a brick-like texture of the background
+  for (var i = 0; i < 3000; i++){
+  var h = random(1, 740); //sets "h" to a random number between 1 and the max height of the canvas
+  var w = random(1, 480); //sets "w" to a random number between 1 and the max width of the canvas
+  stroke(50); //sets the color of the dot
+  strokeWeight(1); //sets the size of the dot
+  point(h, w); //puts the dot in a random location within the canvas
+}
+
   stroke(50); //sets the color for the line
-  background(255, 127, 102); //sets a background color
   strokeWeight(8); //sets the width of the lines below
   line(465, 80, 465, 40); //creates an antennae for the right tower
   strokeWeight(4); //sets the width of the lines below
@@ -57,3 +67,11 @@ function setup() {
   fill(229, 131, 61); //sets the color for the center of the flower
   ellipse(465, 180, 15, 15); //creates the center of the flower
 }
+
+//function draw() { //creates a the dots for a brick-like texture of the background
+  //var h = random(1, 740); //sets "h" to a random number between 1 and the max height of the canvas
+  //var w = random(1, 480); //sets "w" to a random number between 1 and the max width of the canvas
+  //stroke(50); //sets the color of the dot
+  //strokeWeight(1); //sets the size of the dot
+  //point(h, w); //puts the dot in a random location within the canvas
+//}
