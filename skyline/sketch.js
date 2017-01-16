@@ -3,7 +3,7 @@ function setup() {
   background(255, 167, 150); //sets a background color
   
   //creates a the dots for a brick-like texture of the background
-  for (var i = 0; i < 3000; i++){
+  for (var i = 0; i < 3000; i++){ //creates 3000 dots
   var h = random(1, 740); //sets "h" to a random number between 1 and the max height of the canvas
   var w = random(1, 480); //sets "w" to a random number between 1 and the max width of the canvas
   stroke(50); //sets the color of the dot
