@@ -9,7 +9,7 @@ function setup() {
   stroke(50); //sets the color of the dot
   strokeWeight(1); //sets the size of the dot
   point(h, w); //puts the dot in a random location within the canvas
-}
+  }
 
   stroke(50); //sets the color for the line
   strokeWeight(8); //sets the width of the lines below
@@ -67,11 +67,3 @@ function setup() {
   fill(229, 131, 61); //sets the color for the center of the flower
   ellipse(465, 180, 15, 15); //creates the center of the flower
 }
-
-//function draw() { //creates a the dots for a brick-like texture of the background
-  //var h = random(1, 740); //sets "h" to a random number between 1 and the max height of the canvas
-  //var w = random(1, 480); //sets "w" to a random number between 1 and the max width of the canvas
-  //stroke(50); //sets the color of the dot
-  //strokeWeight(1); //sets the size of the dot
-  //point(h, w); //puts the dot in a random location within the canvas
-//}
