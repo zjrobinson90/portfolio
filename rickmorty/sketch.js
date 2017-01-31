@@ -1,16 +1,20 @@
-  var y = 250; // set the center y coordinate for everyone
-  var dir = 5; // set the speed with which everyone moves
-  // sets starting x position for each character
-  var xRick = 0;
-  var xMorty = 80;
-  var xSummer = 900;
-  var xJerry = 800;
-  var xBeth = 0;
-  // sets starting y position for each character
-  var yRick = 50; // same y position for Rick and Morty, as they stay together
-  var ySummer = 50;
-  var yJerry = 350;
-  var yBeth = 400;
+//Created by Zechariah Robinson
+//Last updated 01/30/17
+//This code creates the Rick and Morty gang. It starts them in the corners and moves them to the center.
+
+var y = 250; // set the center y coordinate for everyone
+var dir = 5; // set the speed with which everyone moves
+// sets starting x position for each character
+var xRick = 0;
+var xMorty = 80;
+var xSummer = 900;
+var xJerry = 800;
+var xBeth = 0;
+// sets starting y position for each character
+var yRick = 50; // same y position for Rick and Morty, as they stay together
+var ySummer = 50;
+var yJerry = 350;
+var yBeth = 400;
   
 function setup() {
   createCanvas(1000, 600); // creates a canvas on which to draw characters
