@@ -1,6 +1,6 @@
-//Created by Zechariah Robinson
-//Last updated 01/30/17
-//This code creates the Rick and Morty gang. It starts them in the corners and moves them to the center.
+// Created by Zechariah Robinson
+// Last updated 01/30/17
+// This code creates the Rick and Morty gang. It starts them in the corners and moves them to the center.
 
 var y = 250; // set the center y coordinate for everyone
 var dir = 5; // set the speed with which everyone moves
@@ -67,7 +67,7 @@ function rick(x, y) {
   rect(x, y + 50, 50, 50); // body
   fill(125, 100, 61); // sets the color of the legs
   rect(x, y + 100, 50, 50); // legs
-  fill(255); // setst he color of his lab coat
+  fill(255); // sets the color of his lab coat
   rect(x, y + 50, 15, 70); // lab coat left
   rect(x + 35, y + 50, 15, 70); // lab coat right
 }
