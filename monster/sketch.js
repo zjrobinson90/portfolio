@@ -11,14 +11,14 @@ function setup() {
   createCanvas(400, 600);
 }
 
-// allows you to 
-function keyPressed() {
-  mousePressed();
-}
-
 // runs this function when the mouse is pressed
 function mousePressed() { // switches page to switch between the monster states
   page = 1 - page; // sets page to either 1 or 0
+}
+
+// allows you to change the monster's state with a keypress as well as mouse press
+function keyPressed() {
+  mousePressed();
 }
 
 function draw() {
