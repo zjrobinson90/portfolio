@@ -11,16 +11,6 @@ function setup() {
   createCanvas(400, 600); // creates a canvas on which to draw
 }
 
-// runs this function when the mouse is pressed
-function mousePressed() { // switches page to switch between the monster states
-  page = 1 - page; // sets page to either 1 or 0
-}
-
-// allows you to change the monster's state with a keypress as well as mouse press
-function keyPressed() {
-  mousePressed(); // run the mousePressed function
-}
-
 function draw() {
   background(100) // sets the background to a gray color and prevents there from being a blur/drag effect when the monster is drawn again
   noStroke(); // removes the outline from the shapes and prevents it from coming back when the legs function gets run
@@ -45,6 +35,16 @@ function draw() {
       jumpDir = jumpDir + 1; // reverses the direction of the monsters movement to down
     }
   }
+}
+
+// runs this function when the mouse is pressed
+function mousePressed() { // switches page to switch between the monster states
+  page = 1 - page; // sets page to either 1 or 0
+}
+
+// allows you to change the monster's state with a keypress as well as mouse press
+function keyPressed() {
+  mousePressed(); // run the mousePressed function
 }
 
 // draws the monster including his head, eyes, body, and legs
