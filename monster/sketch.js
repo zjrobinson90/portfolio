@@ -2,13 +2,13 @@
 // Last updated 02/04/17
 // This code creates a monster and then makes him either jump or his eyes move based on whether you click your mouse
 
-var page = 0;
-var eyeDirection = 200;
-var yPosition = 100;
-var jumpDir = 1;
+var page = 0; // sets the initial state of the monster to 0
+var eyeDirection = 200; // creates a variable to move the eyes
+var yPosition = 100; // creates a variable to move the entire monster up and down
+var jumpDir = 1; // creates a variable to change the direction the monster is moving
 
 function setup() {
-  createCanvas(400, 600);
+  createCanvas(400, 600); // creates a canvas on which to draw
 }
 
 // runs this function when the mouse is pressed
@@ -18,7 +18,7 @@ function mousePressed() { // switches page to switch between the monster states
 
 // allows you to change the monster's state with a keypress as well as mouse press
 function keyPressed() {
-  mousePressed();
+  mousePressed(); // run the mousePressed function
 }
 
 function draw() {
@@ -63,6 +63,7 @@ function head(x, y) {
   ellipse(x, y + 10, 115, 125);
 }
 
+// draws the mouth
 function mouth(x, y) {
   fill(0);
   ellipse(x, y + 30, 40, 20);
