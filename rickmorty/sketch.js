@@ -40,8 +40,8 @@ function draw() {
   ySummer = min(ySummer + dir, y); // moves Summer to center y position and stops
   
   // bring Jerry to the center
-  xJerry = max(xJerry - dir, 440); // moves Jerry to center x position and stops
-  yJerry = max(yJerry - dir, y); // moves Jerry to center y position and stops
+  xJerry = max(xJerry - (dir-4), 440); // moves Jerry to center x position and stops
+  yJerry = max(yJerry - (dir-3), y); // moves Jerry to center y position and stops
   
   // bring Beth to the center
   xBeth = min(xBeth + dir, 520); // moves Beth to center x position and stops
