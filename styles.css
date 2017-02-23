@@ -1,0 +1,25 @@
+body {
+  background-color: gray;
+  font-family: 'Oxygen', sans-serif;
+  width: 960px;
+  margin: 40px auto;
+}
+
+section {
+  background-color: black;
+}
+
+h1 {
+  color: purple;
+  font-weight: 700;
+}
+
+p {
+  color: white;
+  font-weight: 500;
+}
+
+a {
+  color: gold;
+  font-weight: 700;
+}
